@@ -1,0 +1,157 @@
+.pageTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.pageTitle h1 {
+  font-size: 17px;
+  margin: 0;
+}
+.pageTitle ul {
+  padding: 0;
+  margin: 0;
+}
+.pageTitle ul li {
+  display: inline-block;
+  color: #a9a9c8;
+  margin-right: 20px;
+  position: relative;
+  font-size: 14px;
+}
+.pageTitle ul li:last-child {
+  margin-right: 0;
+}
+.pageTitle ul li:last-child:before {
+  display: none;
+}
+.pageTitle ul li:before {
+  content: "/";
+  position: absolute;
+  right: -13px;
+  top: 0;
+}
+.pageTitle ul li a {
+  color: #5b5b98;
+  text-decoration: none;
+}
+.pageTitle ul li a:hover {
+  color: var(--primaryColor);
+}
+
+@media only screen and (max-width: 767px) {
+  .pageTitle h1 {
+    font-size: 15px;
+  }
+  .pageTitle ul li {
+    margin-right: 15px;
+    font-size: 11px;
+  }
+  .pageTitle ul li:before {
+    right: -10px;
+  }
+}
+
+/* For RTL Style */
+[dir="rtl"] .pageTitle ul li {
+  margin-right: 0;
+  margin-left: 20px;
+}
+[dir="rtl"] .pageTitle ul li:last-child {
+  margin-left: 0;
+}
+[dir="rtl"] .pageTitle ul li:before {
+  left: -13px;
+  right: auto;
+}
+
+.root {
+  width: 500;
+  display: "flex";
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  margin: "theme.spacing.unit * 2";
+}
+.iconHover:hover {
+  margin: "theme.spacing.unit * 2";
+  color: red;
+}
+.cardHeader {
+  /* textalign: "center"; */
+  text-align: center;
+  background-color: white;
+}
+.inputs {
+  display: "none";
+}
+.title {
+  color: blue;
+  align-items: "center";
+}
+.button {
+  color: blue;
+  margin: 10;
+}
+.secondaryButton {
+  color: "gray";
+  margin: 10;
+}
+.typography {
+  margin: "theme.spacing.unit * 2";
+  background-color: "default";
+}
+
+.searchRoot {
+  padding: "2px 4px";
+  display: "flex";
+  /* alignItems: "center"; */
+  align-items: center;
+  width: 400;
+}
+.searchInput {
+  margin-left: 8;
+  flex: 1;
+}
+.searchIconButton {
+  padding: 10;
+}
+.searchDivider {
+  width: 1;
+  margin: 4;
+  height: 28;
+}
+.thumbsContainer {
+  display: "flex";
+  flex-direction: "row";
+  flex-wrap: "wrap";
+  margin-top: 16;
+}
+.thumbInner {
+  display: "flex";
+  min-width: 0;
+  overflow: "hidden";
+}
+.thumb {
+  display: "inline-flex";
+  border-radius: 2;
+  border: "1px solid #eaeaea";
+  margin-bottom: 8;
+  margin-right: 8;
+  width: "auto";
+  height: "auto";
+  padding: 4;
+  box-sizing: "border-box";
+}
+.img {
+  display: "block";
+  width: "auto";
+  height: "100%";
+}
+.dropzone {
+  background: #fdfdfd;
+  border: 2px dashed #eee;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
